@@ -25,8 +25,8 @@ if($alur=="Masuk")
 			exit;
 	}
 	
-	$simpan=mysqli_query($con,"insert into transaksi(tgl_transaksi,jenis_transaksi,id_barang,id_gudang,no_do,jumlah,keterangan) 
-	values ('$tgl','$alur','$barang','$gudang','$do','$jumlah','$ket')");
+	$simpan=mysqli_query($con,"insert into transaksi(tgl_transaksi,jenis_transaksi,id_barang,id_gudang,no_do,jumlah,keterangan,id_user) 
+	values ('$tgl','$alur','$barang','$gudang','$do','$jumlah','$ket','$user')");
 	if(!($simpan))
 	{
 		echo '<script>alert(\'Transaksi gagal diproses.\')
