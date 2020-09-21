@@ -13,6 +13,8 @@ $gudang=$_POST['gudang'];
 $do=$_POST['do'];
 $jumlah=$_POST['jumlah'];
 $ket=$_POST['ket'];
+$user = $_SESSION['username'];
+
 
 if($alur=="Masuk")
 {
